@@ -3,7 +3,7 @@ package server
 import (
 	"net/http"
 
-	"github.com/Tahmasbi92/middleware-tutorial2/middleware"
+	"github.com/Tahmasbi92/middleware-tutorial4/middleware"
 	"github.com/gofiber/fiber/v2"
 )
 
