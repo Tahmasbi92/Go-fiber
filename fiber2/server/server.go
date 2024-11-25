@@ -3,8 +3,8 @@ package server
 import (
 	"net/http"
 
-	"github.com/Tahmasbi92/fiber2/middleware"
 	"github.com/gofiber/fiber/v2"
+	"github.com/tahmasbi92/fiber2/cmd/middleware"
 )
 
 func Run() {
@@ -12,8 +12,7 @@ func Run() {
 	app := fiber.New()
 
 	// Global Middlewares
-	app.Use(middleware.GlobalLogger)
-
+	app.Use(middleware.RequestLogger)
 	// Define Routes
 	app.Get("/", func(ctx *fiber.Ctx) error {
 		return ctx.Status(http.StatusOK).JSON(fiber.Map{
