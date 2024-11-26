@@ -3,8 +3,6 @@ package server
 import (
 	"net/http"
 
-	"fiberProject/Fiber2/middleware"
-
 	"github.com/gofiber/fiber/v2"
 )
 

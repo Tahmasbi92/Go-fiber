@@ -1,6 +1,6 @@
 package main
 
-import "fiberProject/Fiber2/server"
+import "github.com/Tahmasbi92/fiiber/server10"
 
 func main() {
 	server.Run()
