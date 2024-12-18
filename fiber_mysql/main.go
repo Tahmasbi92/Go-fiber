@@ -24,8 +24,8 @@ func main() {
 	}
 
 	// Connect to Database
-	dsn := os.Getenv("DB_DSN")
-	//dsn := "user:password@tcp(127.0.0.1:3306)/database?charset=utf8mb4&parseTime=True&loc=Local"
+	//dsn := os.Getenv("DB_DSN")
+	dsn := "root:1234@tcp(127.0.0.1:3306)/fiber?charset=utf8mb4&parseTime=True&loc=Local"
 	dbClient, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		log.Fatal("Error connecting to the database: ", err)
