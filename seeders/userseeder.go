@@ -3,8 +3,8 @@ package seeders
 import (
 	"log"
 
-	db "github.com/Tahmasbi92/go-fiber3/database"
-	"github.com/Tahmasbi92/go-fiber3/models"
+	db "github.com/Atarod61/go-fiber3/database"
+	   "github.com/Atarod61/go-fiber3/models"
 )
 
 func seedusers() {
